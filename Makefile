@@ -8,6 +8,8 @@ OUTPUTS := $(patsubst $(SRC_DIR)/%.txt, $(OUT_DIR)/%.txt, $(SOURCES))
 
 all: test
 
+ci: clean check test
+
 $(OUT_DIR):
 	mkdir -p $(OUT_DIR)
 
